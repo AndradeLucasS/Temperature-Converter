@@ -10,9 +10,9 @@ function giveC2Fres(){
 
 function giveC2Kres(){
     var C2K = document.getElementById("c2k");
-    var valueC2K = C2K.value;
-    document.getElementById("c2kres").innerHTML = valueC2K + "ºC in Kelvin is " + parseFloat(valueC2K) + 273.15 + "K";
-    if (valueC2K.length === 0){
+    var valueC2K = parseFloat(C2K.value);
+    document.getElementById("c2kres").innerHTML = valueC2K + "ºC in Kelvin is " + (valueC2K + 273.15) + "K";
+    if (C2K.value.length === 0){
         document.getElementById("c2kres").innerHTML = "Insert a Celsius value above to return a Kelvin value here";
     }
 }
