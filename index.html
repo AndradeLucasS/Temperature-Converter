@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">Temperature Converter</div>
+    <div class="credits">by<a href="https://www.linkedin.com/in/lucas-aeternxm-andrade/">Lucas</a></div>
+    <div class="main-cont">
+        <div class="c2f">
+            <div class="c2ftitle">Celsius (ºC) to Fahrenheit (ºF)</div>
+            <input type="number" id="c2f" oninput="giveC2Fres()" placeholder="Insert your value here">
+            <div id="c2fres">Insert a Celsius value above to return a Fahrenheit value here.</div>
+        </div>
+        <div class="c2k">
+            <div class="c2ktitle">Celsius (ºC) to Kelvin (K)</div>
+            <input type="number" id="c2k" oninput="giveC2Kres()" placeholder="Insert your value here">
+            <div id="c2kres">Insert a Celsius value above to return a Kelvin value here.</div>
+        </div>
+        <div class="f2c">
+            <div class="f2ctitle">Fahrenheit (ºF) to Celsius (ºC)</div>
+            <input type="number" id="f2c" oninput="giveF2Cres()" placeholder="Insert your value here">
+            <div id="f2cres">Insert a Fahrenheit value above to return a Celsius value here.</div>
+        </div>
+        <div class="f2k">
+            <div class="f2ktitle">Fahrenheit (ºF) to Kelvin (K)</div>
+            <input type="number" id="f2k" oninput="giveF2Kres()" placeholder="Insert your value here">
+            <div id="f2kres">Insert a Fahrenheit value above to return a Kelvin value here.</div>
+        </div>
+        <div class="k2c">
+            <div class="k2ctitle">Kelvin (K) to Celsius (ºC)</div>
+            <input type="number" id="k2c" oninput="giveK2Cres()" placeholder="Insert your value here">
+            <div id="k2cres">Insert a Kelvin value to return a Celsius value here.</div>
+        </div>
+        <div class="k2f">
+            <div class="k2ftitle">Kelvin (K) to Fahrenheit (ºF)</div>
+            <input type="number" id="k2f" oninput="giveK2Fres()" placeholder="Insert your value here">
+            <div id="k2fres">Insert a Kelvin value to return a Fahrenheit value here.</div>
+        </div>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
