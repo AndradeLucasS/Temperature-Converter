@@ -28,9 +28,9 @@ function giveF2Cres(){
 
 function giveF2Kres(){
     var F2K = document.getElementById("f2k");
-    var valueF2K = F2K.value;
-    document.getElementById("f2kres").innerHTML = valueF2K + "ºF in Kelvin is " + (valueF2K - 32)*5/9 + 273.15 + "K";
-    if (valueF2K.length === 0){
+    var valueF2K = parseFloat(F2K.value);
+    document.getElementById("f2kres").innerHTML = valueF2K + "ºF in Kelvin is " + parseFloat((valueF2K - 32)*5/9 + 273.15) + "K";
+    if (F2K.value.length === 0){
         document.getElementById("f2kres").innerHTML = "Insert a Fahrenheit value above to return a Kelvin value here";
     }
 }
@@ -47,7 +47,7 @@ function giveK2Cres(){
 function giveK2Fres(){
     var K2F = document.getElementById("k2f");
     var valueK2F = K2F.value;
-    document.getElementById("k2fres").innerHTML = valueK2F + "K in Fahrenheit degree is " + (valueK2F - 273.15)* 9/5 + 32 + "ºF";
+    document.getElementById("k2fres").innerHTML = valueK2F + "K in Fahrenheit degree is " + (((valueK2F - 273.15)* 9/5)+ 32) + "ºF";
     if (valueK2F.length === 0){
         document.getElementById("k2fres").innerHTML = "Insert a Kelvin value to return a Fahrenheit value here";
     }
