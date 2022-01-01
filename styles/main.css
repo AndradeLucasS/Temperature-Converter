@@ -29,12 +29,8 @@ input{
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 ::placeholder {
@@ -56,31 +52,26 @@ input[type=number] {
     word-wrap: break-word;
 }
 
-.main-cont{
+.main-cont, .c2f, .c2k, .f2c, .f2k, .k2c, .k2f, .credits,.c2ftitle, .c2ktitle, .f2ctitle, .f2ktitle, .k2ctitle, .k2ftitle, #c2fres, #c2kres, #f2cres, #f2kres, #k2cres, #k2fres{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.main-cont{
     background-color: rgba(0, 0, 0, 0.256);
-    
 }
 
 .c2f, .c2k, .f2c, .f2k, .k2c, .k2f, .credits {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
     margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .c2ftitle, .c2ktitle, .f2ctitle, .f2ktitle, .k2ctitle, .k2ftitle {
-    display: flex;
-    justify-content: center;
     font-size: 2rem;
 }
 
 #c2fres, #c2kres, #f2cres, #f2kres, #k2cres, #k2fres {
-    display: flex;
-    justify-content: center;
     margin-top: 1rem;
 }
 
