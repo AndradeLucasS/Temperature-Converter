@@ -10,6 +10,11 @@ body{
     background-size: cover;
 }
 
+a{
+    width: auto;
+    margin-left: 0.5%;
+}
+
 input{
     outline: none;
     border-top: none;
@@ -43,11 +48,6 @@ input[type=number] {
   
 ::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.325);
-}
-
-a{
-    width: auto;
-    margin-left: 0.5%;
 }
 
 .title{
