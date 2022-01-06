@@ -2,6 +2,8 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body{
@@ -85,7 +87,13 @@ input::-webkit-inner-spin-button {
 }
 
 .c2f, .c2k, .f2c, .f2k, .k2c, .k2f, .credits {
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.credits{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .c2ftitle, .c2ktitle, .f2ctitle, .f2ktitle, .k2ctitle, .k2ftitle {
